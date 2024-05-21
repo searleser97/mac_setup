@@ -106,3 +106,9 @@ export PATH=$HOME/ProgramFiles/nvim-macos-arm64/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Android SDK
+export ANDROID=$HOME/Library/Android
+export PATH=$ANDROID/cmdline-tools/latest/bin:$PATH
+export PATH=$ANDROID/sdk/platform-tools:$PATH
+export PATH=$ANDROID/sdk/emulator:$PATH
