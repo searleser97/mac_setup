@@ -1,8 +1,11 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/sergiosanc/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+xcode-select --install
+brew install xz # pyenv depends on this library
 brew install wget
 brew install ripgrep
+brew install fd
 # install nodejs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 # install rust
