@@ -33,3 +33,5 @@ git config --global core.editor "nvim"
 git config --global push.autoSetupRemote true
 # set delta as default pager
 git config --global core.pager "delta"
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
