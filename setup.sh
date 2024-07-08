@@ -27,7 +27,7 @@ tar -xvzf ~/ProgramFiles/nvim-linux64.tar.gz -C ~/ProgramFiles/
 git clone https://github.com/searleser97/nvim_lua ~/.config/nvim
 
 # save git credentials in computer
-git config --global credential.helper store
+# git config --global credential.helper store
 # set nvim as default git editor
 git config --global core.editor "nvim"
 # auto create branches on remote locally
