@@ -26,6 +26,12 @@ wget https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64
 tar -xvzf ~/ProgramFiles/nvim-linux64.tar.gz -C ~/ProgramFiles/
 git clone https://github.com/searleser97/nvim_lua ~/.config/nvim
 
+# Install FiraCode font
+mkdir -p ~/.fonts/f 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraMono.zip -P ~/.fonts/f
+unzip ~/.fonts/f/FiraMono.zip -d ~/.fonts/f/
+mv ~/.fonts/f/*.otf /Library/Fonts/
+
 # save git credentials in computer
 # git config --global credential.helper store
 # set nvim as default git editor
