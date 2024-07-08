@@ -14,6 +14,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 brew install pyenv
 
 brew install git-delta
+brew install --cask git-credential-manager
 brew install --cask iterm2
 brew install --cask displaylink
 brew install --cask android-studio
