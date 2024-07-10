@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+initialBranch=$(git branch --show-current)
+baseBranch="users/sergiosanc/localConfig"
+git fetch origin main:main || { exit 1 }
+git switch --ignore-other-worktrees $baseBranch || { exit 1 }
+git pull || { exit 1 }
+git rebase origin/main || { exit 1 }
+git switch $initialBranch || { exit 1 }
+git rebase $baseBranch
