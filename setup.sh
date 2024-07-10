@@ -41,4 +41,7 @@ git config --global push.autoSetupRemote true
 # set delta as default pager
 git config --global core.pager "delta"
 
+mkdir $HOME/Scripts
+cp ./git*.sh $HOME/Scripts/
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
