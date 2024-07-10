@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-baseBranch = "users/sergiosanc/localConfig"
+baseBranch="users/sergiosanc/localConfig"
 git rebase --onto main $baseBranch || { exit 1 }
 
 git push --force-with-lease || { exit 1 }
