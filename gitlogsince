@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+From=$1
+To=$2
+
+if [[ -z "$To" ]]; then
+   To="HEAD"
+fi
+
+FromDate=git show --no-patch --format=%ci $From
+ToDate=git show --no-patch --format=%ci $To
+
+git log --since="$FromDate" --until="$ToDate" --pretty="%Cblue%h%Creset (%ch by %Cgreen%an%Creset) %s"
