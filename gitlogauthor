@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+Author=$1
+git log --author="$Author" --pretty="%Cblue%h%Creset (%ch by %Cgreen%an%Creset) %s" -i
