@@ -112,3 +112,6 @@ export ANDROID=$HOME/Library/Android
 export PATH=$ANDROID/cmdline-tools/latest/bin:$PATH
 export PATH=$ANDROID/sdk/platform-tools:$PATH
 export PATH=$ANDROID/sdk/emulator:$PATH
+
+export PATH=$HOME/Scripts/:$PATH
+
