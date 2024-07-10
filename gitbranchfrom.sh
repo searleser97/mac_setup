@@ -1,5 +1,7 @@
-$NewBranch=$1
-$OriginBranch=$2
+#!/usr/bin/env bash
+
+NewBranch=$1
+OriginBranch=$2
 
 git switch -c $NewBranch $OriginBranch || { exit 1 }
 
