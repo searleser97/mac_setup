@@ -42,6 +42,6 @@ git config --global push.autoSetupRemote true
 git config --global core.pager "delta"
 
 mkdir $HOME/Scripts
-cp ./git*.sh $HOME/Scripts/
+cp ./git* $HOME/Scripts/
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
