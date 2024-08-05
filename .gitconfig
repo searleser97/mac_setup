@@ -7,7 +7,11 @@
 	pager = delta
 [push]
 	autoSetupRemote = true
+[diff]
+        colorMoved = default
 [delta]
+        map-styles = bold purple => syntax magenta, bold cyan => syntax blue
+        ; features = diff-so-fancy
 	side-by-side = true
         file-decoration-style = "#606018" overline
         file-style = 232 bold 184
