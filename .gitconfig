@@ -1,0 +1,19 @@
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[core]
+	pager = delta
+[push]
+	autoSetupRemote = true
+[delta]
+	side-by-side = true
+        file-decoration-style = "#606018" overline
+        file-style = 232 bold 184
+        hunk-header-style = syntax bold italic 237
+        file-added-label = [+] file::
+        file-copied-label = [C] file::
+        file-modified-label = [M] file::
+        file-removed-label = [-] file::
+        file-renamed-label = [R] file::
