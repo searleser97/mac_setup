@@ -1,5 +1,4 @@
 [credential]
-	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
@@ -8,10 +7,10 @@
 [push]
 	autoSetupRemote = true
 [diff]
-        colorMoved = default
+        ; colorMoved = blocks
+        colorMoved = zebra
 [delta]
-        map-styles = bold purple => syntax magenta, bold cyan => syntax blue
-        ; features = diff-so-fancy
+        map-styles = bold purple => syntax purple, bold cyan => syntax blue, bold yellow => syntax purple, bold blue => syntax blue
 	side-by-side = true
         file-decoration-style = "#606018" overline
         file-style = 232 bold 184
