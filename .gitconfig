@@ -3,6 +3,7 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [core]
+        editor = nvim
 	pager = delta
 [push]
 	autoSetupRemote = true
@@ -22,3 +23,5 @@
         file-modified-label = [M] file::
         file-removed-label = [-] file::
         file-renamed-label = [R] file::
+[pull]
+	rebase = true
