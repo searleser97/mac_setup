@@ -26,6 +26,8 @@ wget https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64
 tar -xvzf ~/ProgramFiles/nvim-linux64.tar.gz -C ~/ProgramFiles/
 git clone https://github.com/searleser97/nvim_lua ~/.config/nvim
 
+cp ~/.config/nvim/.wezterm.lua ~/.wezterm.lua
+
 # Install FiraCode font
 mkdir -p ~/.fonts/f 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraMono.zip -P ~/.fonts/f
