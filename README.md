@@ -1,5 +1,9 @@
 # mac_setup
 
-## Select Font in ITerm
+## Create nvim app in automator with the following content
 
-![image](https://github.com/searleser97/mac_setup/assets/5056411/db071152-7bf1-470d-b5d0-bfc05633344c)
+```shell
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+wezterm start nvim "$1"
+```
+<img width="1906" height="1040" alt="image" src="https://github.com/user-attachments/assets/22ad5645-3d23-4c49-bd1d-e37dc89880b8" />
