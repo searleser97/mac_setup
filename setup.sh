@@ -17,9 +17,10 @@ brew install git-delta
 brew install --cask git-credential-manager
 brew install --cask iterm2
 brew install --cask displaylink
-brew install --cask android-studio
+# brew install --cask android-studio
 brew install --cask visual-studio-code
-brew install --cask nordvpn
+# brew install --cask nordvpn
+brew install --cask wezterm@nightly
 
 mkdir ~/ProgramFiles
 wget https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64.tar.gz
@@ -34,16 +35,8 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraMono.z
 unzip ~/.fonts/f/FiraMono.zip -d ~/.fonts/f/
 mv ~/.fonts/f/*.otf /Library/Fonts/
 
-# save git credentials in computer
-# git config --global credential.helper store
-# set nvim as default git editor
-git config --global core.editor "nvim"
-# auto create branches on remote locally
-git config --global push.autoSetupRemote true
-# set delta as default pager
-git config --global core.pager "delta"
-
 mkdir $HOME/Scripts
 cp ./git* $HOME/Scripts/
+cp ./.gitconfig $HOME/.gitconfig
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
